@@ -1,0 +1,128 @@
+ <!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+		<span class="comments">hi，王芳girl=^_^=，很高兴认识你(*^▽^*)</span><br />
+                <span class="comments">我思考了很久，还是追随我的内心吧↖(^ω^)↗</span><br />
+                <span class="comments">因为我相信，当你在做一件对的事情的时候，全世界都在帮你(/≧▽≦/) </span><br />
+		<span class="comments">命运真的很奇妙，2023年2月6日的那一天，是我人生中最高兴的一天</span><br />
+                <span class="comments">因为我遇见了你，遇见了那个属于我的女孩</span><br />		
+                <span class="comments">初次见你就像这首歌的歌词一样:</span><br />
+                <span class="comments">难以忘记初次见你*^ο^* </span><br />
+                 <span class="comments">一双迷人的眼睛~@^_^@~</span><br />
+                <span class="comments">在我脑海里</span><br />
+                <span class="comments">你的身影，挥散不去</span><br />
+                <span class="comments">我知道你喜欢三毛的洒脱，喜欢她与荷西的爱情</span><br />
+		<span class="comments">如果有可能，我愿意做你的荷西（当然没有荷西的悲剧*^ο^*）</span><br />
+		<span class="comments">我知道你家有三颗桃树、一颗葡萄树、一颗泡桐 </span><br />
+		<span class="comments">还记得我当时说想要你家去偷葡萄和桃子吗</span><br />				
+		<span class="comments">其实我内心我希望我有一天能正大光明的去你家摘桃子、葡萄</span><br />			
+		<span class="comments">我给人的映像是木讷，不爱说话，还记得你跟我开玩笑的说：我只会点头</span><br />
+		<span class="comments">但是你的出现，让我知道你就是我这辈子要娶的人(*^▽^*)</span><br />
+                <span class="comments">// 程序是个虚拟的世界，下边是程序中的世界-我希望的世界 </span><br />
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">"likai.hou"</span>);<br />
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">"fang.wang"</span>);<br />
+                <span class="comments">// Today,I want to tell you </span><br />
+                i.like(u);<br />
+                i.hope(u).future(oneday).like(me);<br />
+                oneday=you make up one's mind.<br />
+                <span class="comments">我希望希望希望希望希望你考虑下我‵（*^﹏^*）′‵（*^﹏^*）′‵（*^﹏^*）′，做我的女朋友(my girl)，海枯石烂，此志不渝(*^▽^*)</span><br />
+                <span class="comments">// Our story continues...</span><br />
+
+
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+				
+			            
+					<div id="elapseClock"></div>
+						<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;相识 相爱 相伴一生
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<audio autoplay="autopaly" loop="loop" controls="controls" id="audios">
+		<source src="getvoice.mp3" type="audio/mpeg" />
+	</audio>	
+	
+	<script type="text/javascript">
+		function audioAutoPlay(id){  
+    var audio = document.getElementById(id),
+        play = function(){  
+            audio.play();  
+            document.removeEventListener("touchstart",play, false);  
+        };  
+    audio.play();  
+    document.addEventListener("WeixinJSBridgeReady", function () {  
+        play();  
+    }, false);  
+    document.addEventListener('YixinJSBridgeReady', function() {  
+        play();  
+    }, false);  
+    document.addEventListener("touchstart",play, false);  
+}  
+audioAutoPlay('audios');
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+
+together.setFullYear(2023,1,6);
+together.setHours(11);
+together.setMinutes(28);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 6);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<!-- 第一次：2023.03.13 -->
+<div style="text-align:center;clear:both">
+<p>我爱你❤老婆</p>
+<p>愿得一人心，白首不相离</p>
+<p>Made for my girl(fang.wang) ❤ Made by 麦子熟了</p>
+<p>Copyright © 202302-forever(海枯石烂)~ All Rights Reserved. Designed by likai.hlk</p>
+</div>
+</body>
+</html>
